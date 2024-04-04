@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Currency Converter Tool</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="prob2.css">
+</head>
+
+<body>
+    <header>
+        <h1>Currency Converter Tool</h1>
+    </header>
+
+    <div>
+    <form id="sourceAmtForm">
+        <label for="sourceAmt">Source currency amount: </label><br>
+        <input type="text" id="sourceAmt" name="sourceAmt"><br>
+    </form>
+</div>
+
+    <div class="dropdown">
+        <label for="sourceCurrency">Source currency:</label><br>
+        <select name="sourceCurrency" id="sourceCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+        </select>
+    </div>
+
+    <div class="dropdown">
+        <label for="targetCurrency">Target currency:</label><br>
+        <select name="targetCurrency" id="targetCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+        </select>
+    </div>
+
+    <div>
+    <button type="button" id="button">Convert</button>
+</div>
+
+    <div class="result">
+        <h3>Result</h3>
+        <p id="num"></p>
+        <h3>Exchange rate:</h3>
+        <p id="rate"></p>
+    </div>
+    
+
+    <script src="prob2.js"></script>
+</body>
+
+</html>
