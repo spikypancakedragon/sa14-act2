@@ -4,7 +4,7 @@
 <head>
     <title>Weather Dashboard</title>
     <meta charset="UTF-8">
-    <!-- <link rel="stylesheet" href="prob1.css"> -->
+    <link rel="stylesheet" href="prob1.css">
 </head>
 
 <body>
@@ -17,6 +17,32 @@
         <input type="text" id="city" name="city"><br>
         <button type="submit">Submit</button>
     </form>
+
+    <div class="display">
+        <img src="" alt="weather condition icon" id="icon">
+    </div>
+
+    <div class="display">
+        <table>
+            <tr>
+                <th>City</th>
+                <th>Current time</th>
+                <th>Current temp</th>
+                <th>Condition</th>
+                <th>Humidity</th>
+            </tr>
+            <tr>
+                <td id="cityData"></td>
+                <td id="timeData"></td>
+                <td id="tempData"></td>
+                <td id="condData"></td>
+                <td id="humidData"></td>
+            </tr>
+
+
+        </table>
+
+    </div>
 
 
     <script src="prob1.js"></script>
