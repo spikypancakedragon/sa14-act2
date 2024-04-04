@@ -1,7 +1,41 @@
+body {
+    background-color: lightskyblue;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
 .display {
     display: none;
 }
 
 .forecast {
     float: left;
+}
+
+header {
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    border: solid lightcyan 5px;
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    color: darkblue;
+    font-family: sans-serif;
+}
+
+table {
+    table-layout: fixed;
+    width: 50%;
+    text-align: center;
+
+}
+
+div {
+    border: solid white 5px;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px;
 }
