@@ -4,23 +4,32 @@ const taskFormNew = document.getElementById("taskFormNew")
 
 // event listener for creating a new task
 
-var counter = 0
 taskForm.addEventListener("submit", function(event) {
     event.preventDefault();
     const taskTitle = document.getElementById("taskTitle").value;
     const taskDetails = document.getElementById("taskDetails").value;
 
     const li = document.createElement("li");
-    li.innerHTML = `<span>${taskTitle}</span> <button class="editButton" id="button-${counter}">Edit</button> <button class="deleteButton">Delete</button>`;
-    counter ++
-    // event listener for clicking the edit button next to a task
-    
-    document.getElementById(`button-${counter}`).addEventListener("submit", function(event) {
+    li.innerHTML = `<span>${taskTitle}</span>`;
+
+    const editButton = document.createElement("button")
+    editButton.innerHTML = "Edit"
+    editButton.addEventListener("click", function(event) {
         var things = document.getElementsByClassName("edit");
         for (var i = 0; i < things.length; i++) {
             things[i].style.display = "block";
         };
     });
+    li.appendChild(editButton)
+    taskList.appendChild(li);
+
+    const deleteButton = document.createElement("button")
+    deleteButton.innerHTML = "Delete"
+    deleteButton.addEventListener("click", function(event) {
+       li.remove(); 
+    });
+    li.appendChild(deleteButton)
+    
     taskList.appendChild(li);
     taskForm.reset();
 });
