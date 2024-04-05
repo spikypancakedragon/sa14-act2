@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Todo List</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="prob3.css">
+</head>
+
+<body>
+    <header>
+        <h1>Todo List</h1>
+    </header>
+
+    <h2>Add a task</h2>
+
+    <form id="taskForm">
+        <label for="taskTitle">Task title: </label><br>
+        <input type="text" id="taskTitle" name="taskTitle"><br>
+        <label for="taskDetails">Task details: </label><br>
+        <input type="text" id="taskDetails" name="taskDetails"><br>
+        <button type="submit">Add task</button>
+    </form>
+
+    <h2>Task list</h2>
+
+    <ul id="taskList">
+
+    </ul>
+
+    <h2 class="edit">Edit task</h2>
+
+    <form id="taskFormNew" class="edit">
+        <label for="taskTitleNew">New task title: </label><br>
+        <input type="text" id="taskTitleNew" name="taskTitleNew"><br>
+        <label for="taskDetailsNew">New task details: </label><br>
+        <input type="text" id="taskDetailsNew" name="taskDetailsNew"><br>
+        <button type="submit">Apply</button>
+    </form>
+
+    
+
+    <script src="prob3.js"></script>
+</body>
+
+</html>
