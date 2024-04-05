@@ -1,0 +1,7 @@
+div {
+    background-color: aqua;
+    width: fit-content;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
